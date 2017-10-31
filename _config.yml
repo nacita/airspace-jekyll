@@ -21,9 +21,17 @@ subtitle: "Kursus Linux di Malang"
 baseurl: ""
 cover: "/assets/cover.png"
 logo: "/assets/logo.png"
+excerpt_length: 50
+
 
 # Build settings
 markdown: kramdown
+timezone: "Asia/Jakarta"
+highlighter: rouge
+permalink:   /:year/:month/:title.html
+paginate: 5
+paginate_path: "/blog/page:num/"
+
 
 # Google analytics
 # ga_tracking_id: "UA-XXXX-1"
@@ -35,3 +43,9 @@ descriptions:
 
   - cat: dummy
     desc: "Just some placeholder posts, lorem ipsum and the rest."
+
+gems:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
